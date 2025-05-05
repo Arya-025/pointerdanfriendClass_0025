@@ -9,3 +9,14 @@ class mahasiswa{
     }
 };
 
+int main (){
+
+    mahasiswa mhs{1};
+    mhs.ShowNim();
+
+    mahasiswa &refmhs = mhs;
+    refmhs.nim = 2;
+    mhs.ShowNim();
+
+    
+}
