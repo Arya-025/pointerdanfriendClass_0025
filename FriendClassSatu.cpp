@@ -22,3 +22,25 @@ public:
     void SetId(int pid);
     void displayAll(orang &a);
 };
+
+void siswa::displayAll(orang &a)
+{
+    cout << id << endl << a.nama;
+}
+void orang::SetNama(string pNama)
+{
+    nama = pNama;
+}
+void siswa::SetId(int pId)
+{
+    id = pId;
+}
+int main()
+{
+    orang joko;
+    joko.SetNama("Joko Susilo");
+    siswa joko_siswa;
+    joko_siswa.SetId(1);
+    joko_siswa.displayAll(joko);
+    return 0;
+}
